@@ -26,7 +26,7 @@ const NON_GST_NAV = [
   { href: "/stock", label: "Stock Ledger", icon: Boxes, roles: ["owner", "stock_manager"] },
 ] as const;
 
-export function Sidebar({ role, fullName = "Rudra Pratap" }: { role: UserRole; fullName?: string }) {
+export default function Sidebar({ role, fullName = "Rudra Pratap" }: { role: UserRole; fullName?: string }) {
   const pathname = usePathname();
   const router = useRouter();
   const items = NON_GST_NAV.filter((item) => (item.roles as readonly string[]).includes(role));
@@ -142,3 +142,5 @@ export function Sidebar({ role, fullName = "Rudra Pratap" }: { role: UserRole; f
     </aside>
   );
 }
+
+export { Sidebar };
