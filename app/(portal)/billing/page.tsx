@@ -1,5 +1,6 @@
 "use client";
 
+import { STORE_LOGO_BASE64 } from "@/lib/logoBase64";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -413,7 +414,7 @@ export default function NonGstBillingPage() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="relative h-11 w-11 overflow-hidden rounded-full border-2 border-emerald-500 shadow-md">
-              <Image src="/logo.png" alt="Rudra Electricals" fill className="object-cover" />
+              <Image src={STORE_LOGO_BASE64} alt="Rudra Electricals" fill className="object-cover" />
             </div>
             <div>
               <div className="flex items-center gap-2">
@@ -1006,7 +1007,7 @@ export default function NonGstBillingPage() {
             <div className="border-b-2 border-ink-950 pb-2 mb-2 flex items-center justify-between gap-3">
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/logo.png"
+                  src={STORE_LOGO_BASE64}
                   alt="Rudra Electricals"
                   width={46}
                   height={46}

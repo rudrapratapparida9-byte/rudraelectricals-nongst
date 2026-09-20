@@ -1,7 +1,9 @@
+"use client";
+
 import { createBrowserClient } from "@supabase/ssr";
 import type { Database } from "@/types/database";
 
-// Use this client in Client Components ("use client" files) — e.g. the
+// Use this client in Client Components (files) — e.g. the
 // billing screen, live stock counters, anywhere that needs Realtime.
 export function createClient() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://citctwsatxfzznqtcuzh.supabase.co";

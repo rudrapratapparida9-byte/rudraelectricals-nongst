@@ -1,5 +1,6 @@
-'use client';
+"use client";
 
+import { STORE_LOGO_BASE64 } from "@/lib/logoBase64";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -85,7 +86,7 @@ export default function Sidebar({
         {/* Brand Header */}
         <div className="flex items-center gap-2.5 px-4 py-3.5 border-b border-emerald-900/40 shrink-0 bg-emerald-950/20">
           <div className="relative h-8 w-8 shrink-0 overflow-hidden rounded-full border border-emerald-500/40 shadow-sm">
-            <Image src="/logo.png" alt="Rudra Electricals" fill className="object-cover" />
+            <Image src={STORE_LOGO_BASE64} alt="Rudra Electricals" fill className="object-cover" />
           </div>
           <div>
             <span className="block text-xs font-bold tracking-tight text-white">RUDRA ELECTRICALS</span>

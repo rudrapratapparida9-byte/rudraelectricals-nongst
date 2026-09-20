@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import React from 'react';
 import { Zap, ShieldCheck, Phone, Clock } from 'lucide-react';
 

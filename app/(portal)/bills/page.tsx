@@ -1,5 +1,6 @@
 "use client";
 
+import { STORE_LOGO_BASE64 } from "@/lib/logoBase64";
 import { useState, useEffect } from "react";
 import {
   Search,
@@ -276,7 +277,7 @@ export default function NonGstBillsPage() {
               <div className="border-b-2 border-ink-950 pb-2 mb-2 flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2.5">
                   <img
-                    src="/logo.png"
+                    src={STORE_LOGO_BASE64}
                     alt="Rudra Electricals"
                     width={46}
                     height={46}

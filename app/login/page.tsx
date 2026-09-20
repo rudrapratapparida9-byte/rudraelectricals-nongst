@@ -1,5 +1,6 @@
 "use client";
 
+import { STORE_LOGO_BASE64 } from "@/lib/logoBase64";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Eye, EyeOff, ShieldCheck, UserCheck, ArrowRight, FileSpreadsheet, Zap } from "lucide-react";
@@ -96,7 +97,7 @@ export default function NonGstLoginPage() {
         {/* Brand Header with Official Logo */}
         <div className="mb-8 text-center">
           <div className="relative mx-auto mb-3 h-20 w-20 overflow-hidden rounded-full border-2 border-emerald-500 shadow-xl shadow-emerald-500/20">
-            <Image src="/logo.png" alt="Rudra Electricals" fill className="object-cover" priority />
+            <Image src={STORE_LOGO_BASE64} alt="Rudra Electricals" fill className="object-cover" priority />
           </div>
           <h2 className="text-2xl font-black tracking-tight text-canvas">
             M/S RUDRA ELECTRICALS
